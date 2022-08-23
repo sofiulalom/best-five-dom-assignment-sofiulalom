@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite player</title>
+   <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <header>
+        <section class="conainaier-fluid mb-5">
+           <div class="w-100 bg-dark text-white text-center p-5 m-auto">
+            <h1 class="text-success p-3">Favorite My Player</h1>
+            <p class="w-50 m-auto p-3">I am a sports fan. I like all kinds of outdoor games. Of all enchanting games and sports, I like cricket most. So it is obvious that my favorite sportsman will be a cricketer. Among the cricket players I like Shakib Al Hasan of Bangladesh.</p>
+           </div>
+        </section>
+    </header>
+    <main>
+        <section class="container mt-5">
+         <div class="d-flex w-100">
+          <div class="w-75 container text-center me-3 ">
+            <div class="row">
+              <div class="col" style="width: 33%">
+                <div class="card" style="width: 13rem;">
+                  <img src="/image/musfiq.jpg" class="card-img-top img-fluid"  alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Muspikur Roahim</h5>
+                    <div>
+                      <a onclick="selectToadd(this)" href="#" class="btn btn-primary">select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="width: 33%">
+                <div class="card" style="width: 13rem;">
+                  <img src="/image/tamim_iqba.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tamim Ekbal</h5>
+               
+                    <div>
+                      <a onclick="selectToadd(this)" href="#" class="btn btn-primary">select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="width: 33%">
+                <div class="card" style="width: 13rem;">
+                  <img src="/image/mash_147.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Maussafi B,M</h5>
+                   
+                    <div>
+                      <a onclick="selectToadd(this)" href="#" class="btn btn-primary">select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-3" style="width: 33%">
+                <div class="card" style="width: 13rem;">
+                  <img src="image/Lead-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sakibal hasan</h5>
+                   
+                    <div>
+                      <a onclick="selectToadd(this)" href="#" class="btn btn-primary">select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3" style="width: 33%">
+                <div class="card" style="width: 13rem;">
+                  <img src="image/anamul hoq.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Enamul Hoq B</h5>
+                    
+                    <div>
+                      <a onclick="selectToadd(this)" href="#" class="btn btn-primary">select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3" style="width: 33%">
+                <div class="card" style="width: 13rem;">
+                  <img src="image/mahmudulllah.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mahmodulllah R</h5>
+                   
+                    <div>
+                      <a onclick="selectToadd(this)" href="#" class="btn btn-primary">select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+           
+            <div class="card bg-black text-white mb-2" style="width: 13rem;">
+              <h3 id="select-player" class="text-center">
+                select player <span class="text-primary" id="total-player">0</span></h3>
+                <div id="order-list">
+                  
+                </div>
+            </div>
+             <div>
+              <div class="card bg-black text-white" style="width:13rem">
+                <h3 class="text-center">Budget</h3>
+               <p>par player</p>
+                <input class="mb-2" type="text" name="" id="par-player">
+                <button id="calculat-btn" class="btn btn-primary">calculat</button>
+                <p>par expans $<span id="par-expans">00</span></p>
+               <div class="mt-2">
+                 <div class="mb-2">
+                  <span>Manager</span>
+                  <input class="w-50" type="text" id="manager-mony">
+                 </div>
+                  
+                  <div>
+                    <span>Coach</span>
+                    <input class="w-50 mb-3" type="text" id="coach-mony">
+                  <button id="caluculet-total" class="btn btn-primary mb-2">Calculat Total</button>
+                  <p>Total $<span id="total-inbest">00</span></p>
+                  </div>
+                </div>
+
+              </div>
+             </div>
+
+
+            </div>
+          
+           
+             
+          </div>
+             
+         </div>
+
+        </section>
+    </main>
+    <footer class="container-fluid mt-5 w-100">
+        
+        
+       <div class="p-5 bg-black text-white text-center">
+        <hr>
+        <p class="p-5">@this is best  moment  20222 </p>
+       </div>
+
+    </footer>
+    <script src="/calculate.js"></script>
+    <script src="/select-best-five.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+   "></script>
+
+</body>
+</html>
